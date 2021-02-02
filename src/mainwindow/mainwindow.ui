@@ -34,8 +34,8 @@
    <string notr="true">Cubos</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../../resource/cubos.qrc">
-    <normaloff>:/img/img/Cubos.png</normaloff>:/img/img/Cubos.png</iconset>
+   <iconset>
+    <normaloff>../../resource/img/Cubos.png</normaloff>../../resource/img/Cubos.png</iconset>
   </property>
   <property name="windowOpacity">
    <double>1.000000000000000</double>
@@ -111,19 +111,19 @@ QSpinBox::down-button, QDoubleSpinBox::down-button {
 }
 
 QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
-  image: url(:/img/img/up-arrow.png);
+  image: url(../../resource/img/up-arrow.png);
 }
 
 QSpinBox::up-arrow:off, QDoubleSpinBox::up-arrow:off, QSpinBox::up-arrow:disabled, QDoubleSpinBox::up-arrow:disabled {
-  image: url(:/img/img/up-arrow_off.png);
+  image: url(../../resource/img/up-arrow_off.png);
 }
 
 QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
-  image: url(:/img/img/down-arrow.png);
+  image: url(../../resource/img/down-arrow.png);
 }
 
 QSpinBox::down-arrow:off, QDoubleSpinBox::down-arrow:off, QSpinBox::down-arrow:disabled, QDoubleSpinBox::down-arrow:disabled {
-  image: url(:/img/img/down-arrow_off.png);
+  image: url(../../resource/img/down-arrow_off.png);
 }
 
 QCheckBox {
@@ -132,11 +132,11 @@ QCheckBox {
 }
 
 QCheckBox::indicator:checked {
-  image: url(:/img/img/checked.png);
+  image: url(../../resource/img/checked.png);
 }
 
 QCheckBox::indicator:unchecked {
-  image: url(:/img/img/unchecked.png);
+  image: url(../../resource/img/unchecked.png);
 }</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -1146,8 +1146,8 @@ QToolButton:hover {
     <bool>false</bool>
    </property>
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/New.png</normaloff>:/img/img/New.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/New.png</normaloff>../../resource/img/New.png</iconset>
    </property>
    <property name="text">
     <string>New</string>
@@ -1163,8 +1163,8 @@ QToolButton:hover {
   </action>
   <action name="actionOpen">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Open.png</normaloff>:/img/img/Open.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Open.png</normaloff>../../resource/img/Open.png</iconset>
    </property>
    <property name="text">
     <string>Open</string>
@@ -1180,8 +1180,8 @@ QToolButton:hover {
   </action>
   <action name="actionSave">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Save.png</normaloff>:/img/img/Save.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Save.png</normaloff>../../resource/img/Save.png</iconset>
    </property>
    <property name="text">
     <string>Save</string>
@@ -1197,8 +1197,8 @@ QToolButton:hover {
   </action>
   <action name="actionUndo">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Undo.png</normaloff>:/img/img/Undo.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Undo.png</normaloff>../../resource/img/Undo.png</iconset>
    </property>
    <property name="text">
     <string>Undo</string>
@@ -1214,8 +1214,8 @@ QToolButton:hover {
   </action>
   <action name="actionRedo">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Redo.png</normaloff>:/img/img/Redo.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Redo.png</normaloff>../../resource/img/Redo.png</iconset>
    </property>
    <property name="text">
     <string>Redo</string>
@@ -1231,8 +1231,8 @@ QToolButton:hover {
   </action>
   <action name="actionSelect">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Select.png</normaloff>:/img/img/Select.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Select.png</normaloff>../../resource/img/Select.png</iconset>
    </property>
    <property name="text">
     <string>Select</string>
@@ -1254,8 +1254,8 @@ QToolButton:hover {
   </action>
   <action name="actionTranslate">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Translate.png</normaloff>:/img/img/Translate.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Translate.png</normaloff>../../resource/img/Translate.png</iconset>
    </property>
    <property name="text">
     <string>Translate</string>
@@ -1271,8 +1271,8 @@ QToolButton:hover {
   </action>
   <action name="actionCreate">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Create.png</normaloff>:/img/img/Create.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Create.png</normaloff>../../resource/img/Create.png</iconset>
    </property>
    <property name="text">
     <string>Create</string>
@@ -1288,8 +1288,8 @@ QToolButton:hover {
   </action>
   <action name="actionDocumentation">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Documentation.png</normaloff>:/img/img/Documentation.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Documentation.png</normaloff>../../resource/img/Documentation.png</iconset>
    </property>
    <property name="text">
     <string>Documentation</string>
@@ -1305,8 +1305,8 @@ QToolButton:hover {
   </action>
   <action name="actionAbout">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Contact.png</normaloff>:/img/img/Contact.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Contact.png</normaloff>../../resource/img/Contact.png</iconset>
    </property>
    <property name="text">
     <string>About</string>
@@ -1320,27 +1320,10 @@ QToolButton:hover {
     </font>
    </property>
   </action>
-  <action name="actionRender">
-   <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Render.png</normaloff>:/img/img/Render.png</iconset>
-   </property>
-   <property name="text">
-    <string>Render</string>
-   </property>
-   <property name="font">
-    <font>
-     <family>Microsoft Sans Serif</family>
-     <pointsize>10</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-  </action>
   <action name="actionSave_As">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Save.png</normaloff>:/img/img/Save.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Save.png</normaloff>../../resource/img/Save.png</iconset>
    </property>
    <property name="text">
     <string>Save As</string>
@@ -1356,8 +1339,8 @@ QToolButton:hover {
   </action>
   <action name="actionRotate">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Rotate.png</normaloff>:/img/img/Rotate.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Rotate.png</normaloff>../../resource/img/Rotate.png</iconset>
    </property>
    <property name="text">
     <string>Rotate</string>
@@ -1373,8 +1356,8 @@ QToolButton:hover {
   </action>
   <action name="actionScale">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Scale.png</normaloff>:/img/img/Scale.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Scale.png</normaloff>../../resource/img/Scale.png</iconset>
    </property>
    <property name="text">
     <string>Scale</string>
@@ -1390,8 +1373,8 @@ QToolButton:hover {
   </action>
   <action name="actionExtrude">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Extrude.png</normaloff>:/img/img/Extrude.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Extrude.png</normaloff>../../resource/img/Extrude.png</iconset>
    </property>
    <property name="text">
     <string>Extrude</string>
@@ -1407,8 +1390,8 @@ QToolButton:hover {
   </action>
   <action name="actionExit">
    <property name="icon">
-    <iconset resource="../../resource/cubos.qrc">
-     <normaloff>:/img/img/Exit.png</normaloff>:/img/img/Exit.png</iconset>
+    <iconset>
+     <normaloff>../../resource/img/Exit.png</normaloff>../../resource/img/Exit.png</iconset>
    </property>
    <property name="text">
     <string>Exit</string>
