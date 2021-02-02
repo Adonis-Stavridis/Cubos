@@ -916,8 +916,14 @@ QCheckBox::indicator:unchecked {
      <bold>false</bold>
     </font>
    </property>
-   <property name="autoFillBackground">
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="acceptDrops">
     <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
    </property>
    <property name="styleSheet">
     <string notr="true">QMenuBar {
@@ -950,6 +956,9 @@ QMenu::separator {
     margin: 2px 5px 2px 5px;
   background-color: grey;
 }</string>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="minimumSize">
@@ -1079,6 +1088,9 @@ QMenu::separator {
      <bold>true</bold>
     </font>
    </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
    <property name="styleSheet">
     <string notr="true">QToolBar {
   border: 0px;
@@ -1100,6 +1112,9 @@ QToolButton:hover {
    <property name="movable">
     <bool>false</bool>
    </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftToolBarArea</set>
+   </property>
    <property name="iconSize">
     <size>
      <width>50</width>
@@ -1107,7 +1122,7 @@ QToolButton:hover {
     </size>
    </property>
    <property name="floatable">
-    <bool>true</bool>
+    <bool>false</bool>
    </property>
    <attribute name="toolBarArea">
     <enum>LeftToolBarArea</enum>
@@ -1433,8 +1448,6 @@ QToolButton:hover {
   <tabstop>objectSubdivisionsY</tabstop>
   <tabstop>objectSubdivisionsZ</tabstop>
  </tabstops>
- <resources>
-  <include location="../../resource/cubos.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
