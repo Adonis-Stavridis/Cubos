@@ -5,10 +5,10 @@
 
 class Viewport : public QOpenGLWidget
 {
-	Q_OBJECT
+  Q_OBJECT
 
 public:
-	Viewport(QWidget *parent);
+  Viewport(QWidget *parent);
 };
 
 #endif // VIEWPORT_H
