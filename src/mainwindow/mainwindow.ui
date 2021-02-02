@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Cubos</class>
- <widget class="QMainWindow" name="Cubos">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -58,16 +58,16 @@ font-family:  &quot;Ubuntu&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">QGroupBox {
-	color: snow;
+  color: snow;
     font: bold;
     border: 1px solid silver;
     margin-top: 6px;
-	padding-top: 5px;
+  padding-top: 5px;
 }
 
 QGroupBox:disabled {
-	color	: grey;
-	border: 1px solid grey;
+  color	: grey;
+  border: 1px solid grey;
 }
 
 QGroupBox::title {
@@ -77,66 +77,66 @@ QGroupBox::title {
 }
 
 QLineEdit {
-	color: grey;
-	selection-background-color: transparent;
-	selection-color: grey;
+  color: grey;
+  selection-background-color: transparent;
+  selection-color: grey;
 }
 
 QSpinBox, QDoubleSpinBox {
-	padding: 5px;
-	color: gold;
-	border: 2px solid gold;
-	background-color: #484848;
-	font: 75 12pt &quot;Ubuntu&quot;;
-	font-weight: bold;
-	selection-background-color: grey;
-	selection-color: gold;
+  padding: 5px;
+  color: gold;
+  border: 2px solid gold;
+  background-color: #484848;
+  font: 75 12pt &quot;Ubuntu&quot;;
+  font-weight: bold;
+  selection-background-color: grey;
+  selection-color: gold;
 }
 
 QSpinBox:disabled, QDoubleSpinBox:disabled {
-	color: darkgrey;
-	border: 2px solid grey;
+  color: darkgrey;
+  border: 2px solid grey;
 }
 
 QSpinBox::up-button, QDoubleSpinBox::up-button {
-	background: #282828;
-	width: 16px;
-	padding: 2px;
+  background: #282828;
+  width: 16px;
+  padding: 2px;
 }
 
 QSpinBox::down-button, QDoubleSpinBox::down-button {
-	background: #282828;
-	width: 16px;
-	padding: 2px;
+  background: #282828;
+  width: 16px;
+  padding: 2px;
 }
 
 QSpinBox::up-arrow, QDoubleSpinBox::up-arrow {
-	image: url(:/img/img/up-arrow.png);
+  image: url(:/img/img/up-arrow.png);
 }
 
 QSpinBox::up-arrow:off, QDoubleSpinBox::up-arrow:off, QSpinBox::up-arrow:disabled, QDoubleSpinBox::up-arrow:disabled {
-	image: url(:/img/img/up-arrow_off.png);
+  image: url(:/img/img/up-arrow_off.png);
 }
 
 QSpinBox::down-arrow, QDoubleSpinBox::down-arrow {
-	image: url(:/img/img/down-arrow.png);
+  image: url(:/img/img/down-arrow.png);
 }
 
 QSpinBox::down-arrow:off, QDoubleSpinBox::down-arrow:off, QSpinBox::down-arrow:disabled, QDoubleSpinBox::down-arrow:disabled {
-	image: url(:/img/img/down-arrow_off.png);
+  image: url(:/img/img/down-arrow_off.png);
 }
 
 QCheckBox {
-	padding: 2px;
-	color: snow;
+  padding: 2px;
+  color: snow;
 }
 
 QCheckBox::indicator:checked {
-	image: url(:/img/img/checked.png);
+  image: url(:/img/img/checked.png);
 }
 
 QCheckBox::indicator:unchecked {
-	image: url(:/img/img/unchecked.png);
+  image: url(:/img/img/unchecked.png);
 }</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -885,7 +885,7 @@ QCheckBox::indicator:unchecked {
      </layout>
     </item>
     <item row="0" column="0">
-     <widget class="Display" name="display" native="true">
+     <widget class="Viewport" name="viewport" native="true">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
         <horstretch>1</horstretch>
@@ -921,34 +921,34 @@ QCheckBox::indicator:unchecked {
    </property>
    <property name="styleSheet">
     <string notr="true">QMenuBar {
-	border-bottom: 2px solid cyan;
-	padding: 5px;
-	color: snow;
+  border-bottom: 2px solid cyan;
+  padding: 5px;
+  color: snow;
 }
 
 QMenuBar::item:selected {
-	background-color: grey;
+  background-color: grey;
 }
 
 QMenu {
-	color: snow;
-	padding: 2px;
-	border: 2px solid grey;
+  color: snow;
+  padding: 2px;
+  border: 2px solid grey;
 }
 
 QMenu::item {
-	margin: 2px;
-	padding: 2px;
+  margin: 2px;
+  padding: 2px;
 }
 
 QMenu::item:selected {
-	background-color: grey;
+  background-color: grey;
 }
 
 QMenu::separator {
-	height: 2px;
+  height: 2px;
     margin: 2px 5px 2px 5px;
-	background-color: grey;
+  background-color: grey;
 }</string>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -1081,20 +1081,20 @@ QMenu::separator {
    </property>
    <property name="styleSheet">
     <string notr="true">QToolBar {
-	border: 0px;
-	border-right: 2px solid cyan;
-	padding: 5px;
+  border: 0px;
+  border-right: 2px solid cyan;
+  padding: 5px;
 }
 
 QToolButton {
-	margin: 5px;
-	padding: 2px;
+  margin: 5px;
+  padding: 2px;
 }
 
 QToolButton:hover {
-	border: 1px solid cyan;
-	border-radius: 2px;
-	background-color: gray;
+  border: 1px solid cyan;
+  border-radius: 2px;
+  background-color: gray;
 }</string>
    </property>
    <property name="movable">
@@ -1136,8 +1136,8 @@ QToolButton:hover {
    </property>
    <property name="styleSheet">
     <string notr="true">QStatusBar {
-	border-top: 2px solid cyan;
-	color: snow;
+  border-top: 2px solid cyan;
+  color: snow;
 }</string>
    </property>
   </widget>
@@ -1426,10 +1426,9 @@ QToolButton:hover {
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>Display</class>
+   <class>Viewport</class>
    <extends>QWidget</extends>
-   <header>Display.h</header>
-   <container>1</container>
+   <header>viewport.h</header>
   </customwidget>
  </customwidgets>
  <tabstops>
