@@ -28,8 +28,24 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
+
+#-------------------------------------------------------------------------------
+#	LIBRARIES
+#-------------------------------------------------------------------------------
+
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
+
+cmake_policy(SET CMP0072 NEW)
+
+find_package(OpenGL REQUIRED)
+
+include_directories(
+	${GLFW_INCLUDE_PATH}
+	${GLM_INCLUDE_PATH}
+)
+
+set(LIBS ${OPENGL_LIBRARY} ${GLFW_LIBRARY} Qt${QT_VERSION_MAJOR}::Widgets)
 
 #-------------------------------------------------------------------------------
 #	SUBDIRECTORIES

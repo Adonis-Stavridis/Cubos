@@ -10,7 +10,7 @@ add_library(mainwindow
   mainwindow/viewport.h
 )
 target_include_directories(mainwindow PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/mainwindow")
-target_link_libraries(mainwindow PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(mainwindow PRIVATE ${LIBS})
 
 #-------------------------------------------------------------------------------
 #	EXECUTABLES
@@ -19,4 +19,5 @@ target_link_libraries(mainwindow PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 add_executable(Cubos
   core/main.cpp
 )
-target_link_libraries(Cubos PRIVATE Qt${QT_VERSION_MAJOR}::Widgets mainwindow)
+include_directories(${OPENGL_INCLUDE_DIRS})
+target_link_libraries(Cubos PRIVATE ${LIBS} mainwindow)
