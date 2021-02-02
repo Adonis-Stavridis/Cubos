@@ -2,7 +2,7 @@
 #define VIEWPORT_H
 
 #include <QOpenGLWidget>
-#include <GL/gl.h>
+#include <GL/glu.h>
 
 class Viewport : public QOpenGLWidget
 {
