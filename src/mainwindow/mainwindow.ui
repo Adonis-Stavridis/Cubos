@@ -1151,6 +1151,7 @@ QToolButton:hover {
    </property>
    <property name="styleSheet">
     <string notr="true">QStatusBar {
+	padding-top: 5px;
   border-top: 2px solid cyan;
   color: snow;
 }</string>
