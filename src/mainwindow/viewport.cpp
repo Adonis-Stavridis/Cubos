@@ -10,12 +10,12 @@ Viewport::~Viewport()
 
 void Viewport::initializeGL()
 {
-  glClearColor(0.0f, 0.0f, 0.0f, 1.0f);							 // Set background color to black and opaque
-  glClearDepth(1.0f);																 // Set background depth to farthest
-  glEnable(GL_DEPTH_TEST);													 // Enable depth testing for z-culling
-  glDepthFunc(GL_LEQUAL);														 // Set the type of depth-test
-  glShadeModel(GL_SMOOTH);													 // Enable smooth shading
-  glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST); // Nice perspective corrections
+  glClearColor(0.09411764705f, 0.09411764705f, 0.09411764705f, 1.0f); // Set background color to black and opaque
+  glClearDepth(1.0f);                                              // Set background depth to farthest
+  glEnable(GL_DEPTH_TEST);                                         // Enable depth testing for z-culling
+  glDepthFunc(GL_LEQUAL);                                          // Set the type of depth-test
+  glShadeModel(GL_SMOOTH);                                         // Enable smooth shading
+  glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);               // Nice perspective corrections
 }
 
 void Viewport::resizeGL(int w, int h)
@@ -30,7 +30,7 @@ void Viewport::resizeGL(int w, int h)
 
   // Set the aspect ratio of the clipping volume to match the viewport
   glMatrixMode(GL_PROJECTION); // To operate on the Projection matrix
-  glLoadIdentity();						 // Reset
+  glLoadIdentity();            // Reset
   // Enable perspective projection with fovy, aspect, zNear and zFar
   gluPerspective(45.0f, aspect, 0.1f, 100.0f);
 }
@@ -38,10 +38,10 @@ void Viewport::resizeGL(int w, int h)
 void Viewport::paintGL()
 {
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear color and depth buffers
-  glMatrixMode(GL_MODELVIEW);													// To operate on model-view matrix
+  glMatrixMode(GL_MODELVIEW);                         // To operate on model-view matrix
 
   // Render a color-cube consisting of 6 quads with different colors
-  glLoadIdentity();								 // Reset the model-view matrix
+  glLoadIdentity();                // Reset the model-view matrix
   glTranslatef(1.5f, 0.0f, -7.0f); // Move right and into the screen
 
   glBegin(GL_QUADS); // Begin drawing the color cube with 6 quads
@@ -90,7 +90,7 @@ void Viewport::paintGL()
   glEnd(); // End of drawing color-cube
 
   // Render a pyramid consists of 4 triangles
-  glLoadIdentity();									// Reset the model-view matrix
+  glLoadIdentity();                 // Reset the model-view matrix
   glTranslatef(-1.5f, 0.0f, -6.0f); // Move left and into the screen
 
   glBegin(GL_TRIANGLES); // Begin drawing the pyramid with 4 triangles

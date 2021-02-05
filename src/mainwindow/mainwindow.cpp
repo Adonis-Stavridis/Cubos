@@ -51,32 +51,32 @@ void MainWindow::on_actionRedo_triggered()
 //Tools
 void MainWindow::on_actionSelect_triggered()
 {
-  statusBar()->showMessage(tr("Select Tool"));
+  statusBar()->showMessage(tr("Tool - Select"));
 }
 
 void MainWindow::on_actionTranslate_triggered()
 {
-  statusBar()->showMessage(tr("Translate Tool"));
+  statusBar()->showMessage(tr("Tool - Translate"));
 }
 
 void MainWindow::on_actionRotate_triggered()
 {
-  statusBar()->showMessage(tr("Rotate Tool"));
+  statusBar()->showMessage(tr("Tool - Rotate"));
 }
 
 void MainWindow::on_actionScale_triggered()
 {
-  statusBar()->showMessage(tr("Scale Tool"));
+  statusBar()->showMessage(tr("Tool - Scale"));
 }
 
 void MainWindow::on_actionExtrude_triggered()
 {
-  statusBar()->showMessage(tr("Extrude Tool"));
+  statusBar()->showMessage(tr("Tool - Extrude"));
 }
 
 void MainWindow::on_actionCreate_triggered()
 {
-  statusBar()->showMessage(tr("Create Tool"));
+  statusBar()->showMessage(tr("Tool - Create"));
 }
 
 //Help

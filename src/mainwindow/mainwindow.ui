@@ -259,7 +259,6 @@ QCheckBox::indicator:unchecked {
              <family>Ubuntu</family>
              <pointsize>11</pointsize>
              <weight>75</weight>
-             <italic>true</italic>
              <bold>true</bold>
              <underline>false</underline>
             </font>
@@ -288,7 +287,6 @@ QCheckBox::indicator:unchecked {
              <family>Ubuntu</family>
              <pointsize>11</pointsize>
              <weight>75</weight>
-             <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
@@ -454,7 +452,6 @@ QCheckBox::indicator:unchecked {
              <family>Ubuntu</family>
              <pointsize>11</pointsize>
              <weight>75</weight>
-             <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
@@ -595,7 +592,6 @@ QCheckBox::indicator:unchecked {
              <family>Ubuntu</family>
              <pointsize>11</pointsize>
              <weight>75</weight>
-             <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
@@ -712,7 +708,6 @@ QCheckBox::indicator:unchecked {
             <font>
              <family>Ubuntu</family>
              <weight>75</weight>
-             <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
@@ -793,7 +788,6 @@ QCheckBox::indicator:unchecked {
             <font>
              <family>Ubuntu</family>
              <weight>75</weight>
-             <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
@@ -864,7 +858,6 @@ QCheckBox::indicator:unchecked {
             <font>
              <family>Ubuntu</family>
              <weight>75</weight>
-             <italic>true</italic>
              <bold>true</bold>
             </font>
            </property>
