@@ -2,16 +2,16 @@
 #include "./ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
-		: QMainWindow(parent), ui(new Ui::MainWindow)
+    : QMainWindow(parent), ui(new Ui::MainWindow)
 {
-	ui->setupUi(this);
-	ui->menuBar->setContextMenuPolicy(Qt::PreventContextMenu);
-	ui->mainToolBar->setContextMenuPolicy(Qt::PreventContextMenu);
+  ui->setupUi(this);
+  ui->menuBar->setContextMenuPolicy(Qt::PreventContextMenu);
+  ui->mainToolBar->setContextMenuPolicy(Qt::PreventContextMenu);
 }
 
 MainWindow::~MainWindow()
 {
-	delete ui;
+  delete ui;
 }
 
 //File
@@ -33,63 +33,63 @@ void MainWindow::on_actionSave_As_triggered()
 
 void MainWindow::on_actionExit_triggered()
 {
-	statusBar()->showMessage(tr("Exit"));
-	QApplication::quit();
+  statusBar()->showMessage(tr("Exit"));
+  QApplication::quit();
 }
 
 //Edit
 void MainWindow::on_actionUndo_triggered()
 {
-	statusBar()->showMessage(tr("Undo"));
+  statusBar()->showMessage(tr("Undo"));
 }
 
 void MainWindow::on_actionRedo_triggered()
 {
-	statusBar()->showMessage(tr("Redo"));
+  statusBar()->showMessage(tr("Redo"));
 }
 
 //Tools
 void MainWindow::on_actionSelect_triggered()
 {
-	statusBar()->showMessage(tr("Select Tool"));
+  statusBar()->showMessage(tr("Select Tool"));
 }
 
 void MainWindow::on_actionTranslate_triggered()
 {
-	statusBar()->showMessage(tr("Translate Tool"));
+  statusBar()->showMessage(tr("Translate Tool"));
 }
 
 void MainWindow::on_actionRotate_triggered()
 {
-	statusBar()->showMessage(tr("Rotate Tool"));
+  statusBar()->showMessage(tr("Rotate Tool"));
 }
 
 void MainWindow::on_actionScale_triggered()
 {
-	statusBar()->showMessage(tr("Scale Tool"));
+  statusBar()->showMessage(tr("Scale Tool"));
 }
 
 void MainWindow::on_actionExtrude_triggered()
 {
-	statusBar()->showMessage(tr("Extrude Tool"));
+  statusBar()->showMessage(tr("Extrude Tool"));
 }
 
 void MainWindow::on_actionCreate_triggered()
 {
-	statusBar()->showMessage(tr("Create Tool"));
+  statusBar()->showMessage(tr("Create Tool"));
 }
 
 //Help
 void MainWindow::on_actionDocumentation_triggered()
 {
-	statusBar()->showMessage(tr("Documentation"));
-	QDesktopServices::openUrl(QUrl("https://adonis-stavridis.github.io/Cubos-website/#/documentation"));
+  statusBar()->showMessage(tr("Documentation"));
+  QDesktopServices::openUrl(QUrl("https://adonis-stavridis.github.io/Cubos-website/#/documentation"));
 }
 
 void MainWindow::on_actionAbout_triggered()
 {
-	statusBar()->showMessage(tr("About"));
-	QDesktopServices::openUrl(QUrl("https://adonis-stavridis.github.io/Cubos-website/#/about"));
+  statusBar()->showMessage(tr("About"));
+  QDesktopServices::openUrl(QUrl("https://adonis-stavridis.github.io/Cubos-website/#/about"));
 }
 
 // //Translation

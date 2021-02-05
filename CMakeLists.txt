@@ -29,6 +29,8 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
+set(RESOURCE_FILE "${CMAKE_SOURCE_DIR}/resource/cubos.qrc")
+
 #-------------------------------------------------------------------------------
 #	LIBRARIES
 #-------------------------------------------------------------------------------
@@ -41,8 +43,8 @@ cmake_policy(SET CMP0072 NEW)
 find_package(OpenGL REQUIRED)
 
 include_directories(
-	${GLFW_INCLUDE_PATH}
-	${GLM_INCLUDE_PATH}
+  ${GLFW_INCLUDE_PATH}
+  ${GLM_INCLUDE_PATH}
 )
 
 set(LIBS ${OPENGL_LIBRARY} ${GLFW_LIBRARY} Qt${QT_VERSION_MAJOR}::Widgets)

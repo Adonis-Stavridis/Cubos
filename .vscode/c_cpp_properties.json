@@ -1,16 +1,14 @@
 {
-    "configurations": [
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
-                "/usr/include/x86_64-linux-gnu/qt5"
-            ],
-            "defines": [],
-            "compilerPath": "/usr/bin/clang-11",
-            "configurationProvider": "ms-vscode.cmake-tools"
-        }
+  "configurations": [{
+    "name": "Linux",
+    "includePath": [
+      "${workspaceFolder}/**",
+      "/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+      "/usr/include/x86_64-linux-gnu/qt5"
     ],
-    "version": 4
+    "defines": [],
+    "compilerPath": "/usr/bin/clang-11",
+    "configurationProvider": "ms-vscode.cmake-tools"
+  }],
+  "version": 4
 }

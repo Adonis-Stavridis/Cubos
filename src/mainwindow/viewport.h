@@ -6,16 +6,16 @@
 
 class Viewport : public QOpenGLWidget
 {
-	Q_OBJECT
+  Q_OBJECT
 
 public:
-	Viewport(QWidget *parent);
-	~Viewport();
+  Viewport(QWidget *parent);
+  ~Viewport();
 
 protected:
-	void initializeGL() override;
-	void resizeGL(int w, int h) override;
-	void paintGL() override;
+  void initializeGL() override;
+  void resizeGL(int w, int h) override;
+  void paintGL() override;
 };
 
 #endif // VIEWPORT_H
