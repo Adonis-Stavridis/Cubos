@@ -13,10 +13,10 @@ namespace Cubos
   {
   private:
     std::fstream _fileStream;
-    std::string _filePath;
+    const std::string _filePath;
 
   public:
-    FileHandler(std::string filePath);
+    FileHandler(const std::string &filePath);
     ~FileHandler();
 
   public:

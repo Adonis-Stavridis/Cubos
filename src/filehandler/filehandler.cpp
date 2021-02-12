@@ -1,7 +1,6 @@
 #include "filehandler.h"
 
-Cubos::FileHandler::FileHandler(std::string filePath) : _fileStream(filePath),
-                                                        _filePath(filePath)
+Cubos::FileHandler::FileHandler(const std::string &filePath) : _fileStream(filePath), _filePath(filePath)
 {
 }
 
@@ -18,7 +17,7 @@ const void Cubos::FileHandler::open()
 {
   std::string line;
 
-  if (this->_fileStream.is_open())
+  if (!this->_fileStream.is_open())
   {
     throw Cubos::Exceptions::CouldNotOpenFileException();
   }
