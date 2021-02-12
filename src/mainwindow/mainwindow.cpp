@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
+#include <iostream>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
@@ -21,6 +23,19 @@ void MainWindow::on_actionNew_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
+  QString scenesPath = QDir::homePath() + "/Cubos/Scenes";
+  QString filePath = QFileDialog::getOpenFileName(this, tr("Open Cubos Scene"), scenesPath, tr("Cubos Files (*.cubos)"));
+
+  if (filePath.isEmpty())
+  {
+    return;
+  }
+
+  QString message = "Open file: " + QUrl(filePath).fileName();
+  statusBar()->showMessage(message);
+
+  Cubos::FileHandler file(filePath.toStdString());
+  file.open();
 }
 
 void MainWindow::on_actionSave_triggered()

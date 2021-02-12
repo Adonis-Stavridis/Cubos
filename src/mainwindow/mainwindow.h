@@ -4,6 +4,11 @@
 #include <QMainWindow>
 #include <QDesktopServices>
 #include <QUrl>
+#include <QFileDialog>
+#include <QString>
+#include <QTextStream>
+
+#include <filehandler.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -16,12 +21,12 @@ class MainWindow : public QMainWindow
 {
   Q_OBJECT
 
+private:
+  Ui::MainWindow *ui;
+
 public:
   MainWindow(QWidget *parent = nullptr);
   ~MainWindow();
-
-private:
-  Ui::MainWindow *ui;
 
 private slots:
   //File

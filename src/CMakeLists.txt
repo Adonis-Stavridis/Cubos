@@ -2,6 +2,13 @@
 #	LIBRARIES
 #-------------------------------------------------------------------------------
 
+add_library(filehandler
+  filehandler/filehandler.cpp
+  filehandler/filehandler.h
+)
+target_include_directories(filehandler PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/filehandler")
+target_link_libraries(filehandler PRIVATE ${LIBS})
+
 add_library(mainwindow
   mainwindow/mainwindow.cpp
   mainwindow/mainwindow.h
@@ -11,7 +18,7 @@ add_library(mainwindow
   ${RESOURCE_FILE}
 )
 target_include_directories(mainwindow PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/mainwindow")
-target_link_libraries(mainwindow PRIVATE ${LIBS})
+target_link_libraries(mainwindow PRIVATE ${LIBS} filehandler)
 
 #-------------------------------------------------------------------------------
 #	EXECUTABLES
@@ -22,4 +29,4 @@ add_executable(Cubos
   ${RESOURCE_FILE}
 )
 include_directories(${OPENGL_INCLUDE_DIRS})
-target_link_libraries(Cubos PRIVATE ${LIBS} mainwindow)
+target_link_libraries(Cubos PRIVATE ${LIBS} filehandler mainwindow)
