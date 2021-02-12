@@ -20,12 +20,12 @@ const void Cubos::FileHandler::open()
 
   if (this->_fileStream.is_open())
   {
-    while (getline(this->_fileStream, line))
-    {
-      std::cout << line << std::endl;
-    }
-    this->_fileStream.close();
+    throw Cubos::Exceptions::CouldNotOpenFileException();
   }
-  else
-    std::cerr << "Unable to open file";
+
+  while (getline(this->_fileStream, line))
+  {
+    std::cout << line << std::endl;
+  }
+  this->_fileStream.close();
 }

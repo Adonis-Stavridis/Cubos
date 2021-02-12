@@ -2,6 +2,7 @@
 #define FILEHANDLER_H
 
 #include <fstream>
+#include <exception>
 
 #include <iostream>
 
@@ -24,10 +25,18 @@ namespace Cubos
   public:
     const void open();
     const void save();
-
-  private:
-    
   };
+
+  namespace Exceptions
+  {
+    struct CouldNotOpenFileException : public std::exception
+    {
+      const char *what() const throw()
+      {
+        return "Could not open file";
+      }
+    };
+  } // namespace Exceptions
 
 } // namespace Cubos
 

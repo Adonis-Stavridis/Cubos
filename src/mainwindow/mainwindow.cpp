@@ -35,7 +35,14 @@ void MainWindow::on_actionOpen_triggered()
   statusBar()->showMessage(message);
 
   Cubos::FileHandler file(filePath.toStdString());
-  file.open();
+  try
+  {
+    file.open();
+  }
+  catch (std::exception &e)
+  {
+    statusBar()->showMessage(tr(e.what()));
+  }
 }
 
 void MainWindow::on_actionSave_triggered()
