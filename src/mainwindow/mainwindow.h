@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QDesktopServices>
-#include <QUrl>
 #include <QFileDialog>
 #include <QString>
 #include <QTextStream>

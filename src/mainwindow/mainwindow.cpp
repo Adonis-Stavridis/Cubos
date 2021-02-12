@@ -23,15 +23,16 @@ void MainWindow::on_actionNew_triggered()
 
 void MainWindow::on_actionOpen_triggered()
 {
-  QString scenesPath = QDir::homePath() + "/Cubos/Scenes";
-  QString filePath = QFileDialog::getOpenFileName(this, tr("Open Cubos Scene"), scenesPath, tr("Cubos Files (*.cubos)"));
+  const QString scenesPath = QDir::homePath() + "/Cubos/Scenes";
+  const QString filePath = QFileDialog::getOpenFileName(this, tr("Open Cubos Scene"), scenesPath, tr("Cubos Files (*.cubos)"));
 
   if (filePath.isEmpty())
   {
     return;
   }
 
-  QString message = "Open file: " + QUrl(filePath).fileName();
+  const QFileInfo fileInfo(filePath);
+  const QString message = "Open file: " + fileInfo.fileName();
   statusBar()->showMessage(message);
 
   Cubos::FileHandler file(filePath.toStdString());
@@ -39,7 +40,7 @@ void MainWindow::on_actionOpen_triggered()
   {
     file.open();
   }
-  catch (std::exception &e)
+  catch (const std::exception &e)
   {
     statusBar()->showMessage(tr(e.what()));
   }
@@ -51,6 +52,34 @@ void MainWindow::on_actionSave_triggered()
 
 void MainWindow::on_actionSave_As_triggered()
 {
+  const QString scenesPath = QDir::homePath() + "/Cubos/Scenes";
+  QString filePath = QFileDialog::getSaveFileName(this, tr("Save Cubos Scene"), scenesPath, tr("Cubos Files (*.cubos)"));
+
+  if (filePath.isEmpty())
+  {
+    return;
+  }
+
+  QFileInfo fileInfo(filePath);
+  QString fileName = fileInfo.fileName();
+  if (fileInfo.suffix() != "cubos")
+  {
+    filePath += ".cubos";
+    fileName += ".cubos";
+  }
+
+  const QString message = "Save file: " + fileName;
+  statusBar()->showMessage(message);
+
+  Cubos::FileHandler file(filePath.toStdString());
+  try
+  {
+    file.save();
+  }
+  catch (const std::exception &e)
+  {
+    statusBar()->showMessage(tr(e.what()));
+  }
 }
 
 void MainWindow::on_actionExit_triggered()
