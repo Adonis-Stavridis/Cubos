@@ -26,5 +26,18 @@ const void Cubos::FileHandler::open()
   {
     std::cout << line << std::endl;
   }
+
+  this->_fileStream.close();
+}
+
+const void Cubos::FileHandler::save()
+{
+  if (!this->_fileStream.is_open())
+  {
+    this->_fileStream.open(this->_filePath, std::ios_base::out);
+  }
+
+  this->_fileStream << "This is a saved Cubos scene" << std::endl;
+
   this->_fileStream.close();
 }
