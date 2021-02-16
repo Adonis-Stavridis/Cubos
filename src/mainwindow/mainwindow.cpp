@@ -4,16 +4,16 @@
 #include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::MainWindow)
+    : QMainWindow(parent), _ui(new Ui::MainWindow)
 {
-  ui->setupUi(this);
-  ui->menuBar->setContextMenuPolicy(Qt::PreventContextMenu);
-  ui->mainToolBar->setContextMenuPolicy(Qt::PreventContextMenu);
+  _ui->setupUi(this);
+  _ui->menuBar->setContextMenuPolicy(Qt::PreventContextMenu);
+  _ui->mainToolBar->setContextMenuPolicy(Qt::PreventContextMenu);
 }
 
 MainWindow::~MainWindow()
 {
-  delete ui;
+  delete _ui;
 }
 
 //File

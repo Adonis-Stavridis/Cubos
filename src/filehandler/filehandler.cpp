@@ -10,34 +10,34 @@ Cubos::FileHandler::~FileHandler()
 
 const std::string Cubos::FileHandler::getFilePath()
 {
-  return this->_filePath;
+  return _filePath;
 }
 
 const void Cubos::FileHandler::open()
 {
   std::string line;
 
-  if (!this->_fileStream.is_open())
+  if (!_fileStream.is_open())
   {
     throw Cubos::Exceptions::CouldNotOpenFileException();
   }
 
-  while (getline(this->_fileStream, line))
+  while (getline(_fileStream, line))
   {
     std::cout << line << std::endl;
   }
 
-  this->_fileStream.close();
+  _fileStream.close();
 }
 
 const void Cubos::FileHandler::save()
 {
-  if (!this->_fileStream.is_open())
+  if (!_fileStream.is_open())
   {
-    this->_fileStream.open(this->_filePath, std::ios_base::out);
+    _fileStream.open(_filePath, std::ios_base::out);
   }
 
-  this->_fileStream << "This is a saved Cubos scene" << std::endl;
+  _fileStream << "This is a saved Cubos scene" << std::endl;
 
-  this->_fileStream.close();
+  _fileStream.close();
 }

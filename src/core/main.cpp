@@ -1,6 +1,9 @@
 #include <QApplication>
 
 #include <mainwindow.h>
+#include <app.h>
+
+Cubos::App cubosApp;
 
 int main(int argc, char *argv[])
 {

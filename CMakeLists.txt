@@ -47,7 +47,7 @@ include_directories(
   ${GLM_INCLUDE_PATH}
 )
 
-set(LIBS ${OPENGL_LIBRARY} ${GLFW_LIBRARY} Qt${QT_VERSION_MAJOR}::Widgets)
+set(BASE_LIBS ${OPENGL_LIBRARY} ${GLFW_LIBRARY} Qt${QT_VERSION_MAJOR}::Widgets)
 
 #-------------------------------------------------------------------------------
 #	SUBDIRECTORIES
